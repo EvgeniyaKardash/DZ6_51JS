@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+      
+
+    //  let x = [0.3,5.2,9.4,8];
+    //  let y = [43,5,3.4,8,20];
+    //  let a = 0,b =0, c;
+
+
+    //  1 способ
+
+    //   for(i=0; i<x.length; i++)
+    //    a += x[i];
+
+    //    for(j=0; j<y.length; j++)
+    //    b += y[j];
+
+    //    c = (a+b)/2
+
+    //   alert(c);
+
+      
+
+    // // 2 способ
+
+    function sumNumbers() {
+
+        let x = [0.3,5.2,9.4,8];
+        let y = [43,5,3.4,8,20];
+        let sum1 = 0;
+        let sum2 = 0;
+
+        for(let number of x) {
+            sum1 +=number;
+        }
+        for(let number of y) {
+            sum2 +=number;
+        }
+        return ((sum1+sum2)/2)
+
+    }
+    alert (sumNumbers());
+    
+
+    </script>
+    
+</body>
+</html>

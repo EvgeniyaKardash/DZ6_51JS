@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+let M = +prompt("Введите число M");
+let N = +prompt("Введите число N");
+
+
+ function Fun() {
+
+    let A = "";
+    let B = "";
+    let C = "";
+
+
+    let facA = 1;
+    let facB = 1;
+    let facC = 1;
+   
+  
+
+    for (i=1; i<=M; i++) {
+     A += i;
+    //  console.log(A);
+    }
+    let arrA = A.split("");
+        //    console.log(arrA);
+           for(let number of arrA) {
+            facA *=number;
+           }
+
+
+        
+        
+        
+      
+                for (j=1; j<=N; j++) {
+                B += j;
+                }
+                //  console.log(B);
+                
+                let arrB = B.split("");
+                    //    console.log(arrA);
+                    for(let number of arrB) {
+                        facB *=number;
+                    }
+
+
+
+                    for (k=1; k<=M+1; k++) {
+                    C += k;
+                    //  console.log(A);
+                    }
+                    let arrC = C.split("");
+                        //    console.log(arrA);
+                        for(let number of arrC) {
+                            facC *=number;
+                        }
+
+
+
+
+
+
+
+
+                        return (facA+facB)/(facC);
+                    
+
+}
+ alert(Fun());
+
+
+
+
+    </script>
+    
+</body>
+</html>
